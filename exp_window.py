@@ -189,7 +189,9 @@ class ExperimentWindow(QMainWindow):
         end_y = round(ball_y - height * 0.1)
 
         # instantiate a QLabel
-        ball_png_path = "ball_" + self.ball_color + ".png"
+        ball_png_path = self.setting.ball_path + \
+                         self.ball_color +\
+                         self.setting.ball_file_extension
         ball_png = QPixmap(ball_png_path)
         self.ball = QLabel(self.stackedWidget.currentWidget())
         self.ball.setGeometry(ball_x, ball_y, ball_width, ball_height)

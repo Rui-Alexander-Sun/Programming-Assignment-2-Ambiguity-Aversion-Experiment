@@ -28,7 +28,10 @@ class Settings:
         self.min_age = 18
         self.data_path = self.set_data_path()
         self.ui_path = 'experiment.ui'
-        self.image_path = "urn.png"
+        self.image_path = "images/"
+        self.urn_path = self.image_path + "urn.png"
+        self.ball_path = self.image_path + "ball_"
+        self.ball_file_extension = ".png"
         self.pages_before_trials = 3
         self.conditions = self.set_conditions()
         self.trial_geo_list = [100, 100, 800, 600]
@@ -55,27 +58,27 @@ class Settings:
         urn_2_random = RandomUrns("urn_2_random",
                                   ["blue", "red"],
                                   2,
-                                  self.image_path)
+                                  self.urn_path)
         urn_2_equal = FixUrns("urn_2_equal",
                               ["blue", "red"],
                               [1, 1],
-                              self.image_path)
+                              self.urn_path)
         urn_10_random = RandomUrns("urn_10_random",
                                    ["blue", "red"],
                                    10,
-                                   self.image_path)
+                                   self.urn_path)
         urn_10_equal = FixUrns("urn_10_equal",
                                ["blue", "red"],
                                [5, 5],
-                               self.image_path)
+                               self.urn_path)
         urn_100_random = RandomUrns("urn_100_random",
                                     ["blue", "red"],
                                     100,
-                                    self.image_path)
+                                    self.urn_path)
         urn_100_equal = FixUrns("urn_100_equal",
                                 ["blue", "red"],
                                 [50, 50],
-                                self.image_path)
+                                self.urn_path)
 
         urns1 = [urn_2_random, urn_2_equal]
         urns2 = [urn_10_random, urn_10_equal]
