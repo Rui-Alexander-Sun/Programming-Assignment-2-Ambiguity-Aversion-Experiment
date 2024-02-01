@@ -1,4 +1,4 @@
-# UCL-Programming-Assignment-Ambiguity-Aversion-Experiment
+# UCL-Programming-Assignment-2-Ambiguity-Aversion-Experiment
 
 This is one of my assignments (grade: 88) for programming course, replicating and expanding the ambiguity aversion experiment designed by Pulford &amp; Collman (2008).
 
